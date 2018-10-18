@@ -9,3 +9,10 @@ main:
 	li $v0,4
 	la $a0, curr
 	syscall
+	
+	addi$s0, $zero, 0
+	li $v0, 1
+	move $a0, $s0
+	syscall
+	
+	

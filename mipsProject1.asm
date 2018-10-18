@@ -3,3 +3,9 @@ start: .word 'A'
 newLine: .asciiz "/n"
 curr: .word '@'
 comma: .asciiz ","
+
+.text
+main:
+	li $v0,4
+	la $a0, curr
+	syscall

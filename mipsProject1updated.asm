@@ -94,3 +94,7 @@ main:
 	
 	li $v0, 10
    	syscall
+   	
+   	addi $a0, $0, 0xA
+        addi $v0, $0, 0xB 
+        syscall

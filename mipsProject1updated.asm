@@ -80,6 +80,12 @@ main:
         la $a0, curr 
         syscall
 	
-	
+	#s#
+        lw $s1, curr
+        addi $s1, $s1, 14
+        sw $s1, curr 
+        li $v0, 4 
+        la $a0, curr 
+        syscall
 	
 	

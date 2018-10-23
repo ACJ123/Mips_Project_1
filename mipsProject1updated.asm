@@ -64,5 +64,14 @@ main:
         la $a0, curr #load the addy of curr into $a0 to print out
         syscall
 	
+	#n#
+        lw $s1, curr
+        addi $s1, $s1, -1
+        sw $s1, curr 
+        li $v0, 4 
+        la $a0, curr 
+        syscall
+	
+	
 	
 	

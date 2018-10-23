@@ -91,6 +91,14 @@ main:
         li $v0, 4 
         la $a0, curr 
         syscall
+        
+        #,#
+        lw $s1, curr
+        addi $s1, $s1, -71
+        sw $s1, curr 
+        li $v0, 4 
+        la $a0, curr 
+        syscall
 	
 	li $v0, 10
    	syscall

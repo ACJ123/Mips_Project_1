@@ -50,6 +50,10 @@ main:
 	move $a0, $s0
 	syscall
 	
+	addi $a0, $0, 0xA
+        addi $v0, $0, 0xB 
+        syscall
+	
 	#Name#
 	#J#
 	li $v0, 4
@@ -88,4 +92,5 @@ main:
         la $a0, curr 
         syscall
 	
-	
+	li $v0, 10
+   	syscall

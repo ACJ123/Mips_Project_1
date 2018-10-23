@@ -100,9 +100,17 @@ main:
         la $a0, curr 
         syscall
         
-        #,#
+        # #
         lw $s1, curr
         addi $s1, $s1, -12
+        sw $s1, curr 
+        li $v0, 4 
+        la $a0, curr 
+        syscall
+	
+	#A#
+        lw $s1, curr
+        addi $s1, $s1, 33
         sw $s1, curr 
         li $v0, 4 
         la $a0, curr 
